@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="42" height="28" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32">
+  <image source="tileset.png" width="512" height="512"/>
+  <tile id="78">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Collision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztlcsJwCAUBF+JNmD/bQRv3uLTMRtlB/YiuIwftEZEXcwbq/1UvvT8K/ZkUXgSdzvTPbuuNq90oT1HxkY4yXPnuZfI7wPFjZ7Kf+Hm91OxHnuyqDyzHfZkO+zJdtiT7Zj1JLLbU8Gpng6TB7sXd4o=
+  </data>
+ </layer>
+ <layer name="NonCollision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJzt0jEKACAMBMG8UPz/a4JgpaVNgjNw/RYXAQAAcBvHqlptc0/nu06dHf4Jv0j3SwYl
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="42" height="28">
+  <object name="S" type="screenTransition" x="512" y="898" width="322" height="86"/>
+  <object name="N" type="screenTransition" x="512" y="-95" width="322" height="86"/>
+  <object name="E" type="screenTransition" x="1345" y="280" width="120" height="292"/>
+  <object name="W" type="screenTransition" x="-123" y="269" width="120" height="292"/>
+  <object name="PORTAL" type="screenTransition" x="774" y="616" width="48" height="80"/>
+ </objectgroup>
+</map>

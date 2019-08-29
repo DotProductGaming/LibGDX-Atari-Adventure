@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="42" height="28" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32">
+  <image source="tileset.png" width="512" height="512"/>
+  <tile id="78">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Collision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztzsEJACEQBMGN0PzDMYR7WIgH3TDfodbMrMN9dfqvdtP5ajltOW05bTltOW05bTltOW05bTltOW1/dTazDXPDS5E=
+  </data>
+ </layer>
+ <layer name="NonCollision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20Hb6AAAAAA4DcSYAAB
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="42" height="28">
+  <object name="S" type="screenTransition" x="512" y="898" width="322" height="86"/>
+  <object name="N" type="screenTransition" x="512" y="-95" width="322" height="86"/>
+  <object name="E" type="screenTransition" x="1345" y="280" width="120" height="292"/>
+  <object name="W" type="screenTransition" x="-123" y="269" width="120" height="292"/>
+  <object name="Black Key" type="item" gid="2" x="126" y="154">
+   <properties>
+    <property name="color" value="black"/>
+    <property name="itemType" value="key"/>
+    <property name="texture" value="black_key.png"/>
+   </properties>
+  </object>
+  <object name="Dragon Spawner 1" type="item" gid="8" x="158" y="758">
+   <properties>
+    <property name="itemType" value="spawner"/>
+    <property name="scale" value=".2"/>
+    <property name="spawns" value="Yellow Dragon"/>
+    <property name="texture" value="spawner.png"/>
+   </properties>
+  </object>
+  <object name="Dragon Spawner 3" type="item" gid="8" x="1166" y="776">
+   <properties>
+    <property name="itemType" value="spawner"/>
+    <property name="scale" value=".2"/>
+    <property name="spawns" value="Yellow Dragon"/>
+    <property name="texture" value="spawner.png"/>
+   </properties>
+  </object>
+  <object name="Dragon Spawner 2" type="item" gid="8" x="658" y="768">
+   <properties>
+    <property name="itemType" value="spawner"/>
+    <property name="scale" value=".2"/>
+    <property name="spawns" value="Yellow Dragon"/>
+    <property name="texture" value="spawner.png"/>
+   </properties>
+  </object>
+  <object name="Yellow Dragon" type="itemTemplate" gid="3" x="194" y="718">
+   <properties>
+    <property name="frames" value="3"/>
+    <property name="itemType" value="dragon"/>
+    <property name="texture" value="yellow_dragon.png"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

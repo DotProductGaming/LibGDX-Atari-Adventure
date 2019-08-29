@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="42" height="28" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32">
+  <image source="tileset.png" width="512" height="512"/>
+  <tile id="78">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Collision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJzt00EKACAIRFFv6P1v0wVCajQr+APSJpm30c3MN8aCd5Zo5+Tcdq5E2a/uxIlT6ey6CZw4f3dWeTNdOHGqTvUfTpw4cWadncFZm1+dmenset05ANkaovE=
+  </data>
+ </layer>
+ <layer name="NonCollision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztzjENAAAIwDAc4t8NNygA0ib7FwEAAF2OtrryCQDfFYltAnk=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="42" height="28">
+  <object name="S" type="screenTransition" x="528" y="898" width="290" height="70"/>
+  <object name="Yellow Key" type="item" gid="1" x="314" y="600">
+   <properties>
+    <property name="itemType" value="key"/>
+    <property name="texture" value="yellow_key.png"/>
+   </properties>
+  </object>
+  <object name="Yellow Gate" type="item" gid="4" x="656" y="631">
+   <properties>
+    <property name="actionDriven" value="true"/>
+    <property name="bodyType" value="StaticBody"/>
+    <property name="itemType" value="gate"/>
+    <property name="sensor" value="false"/>
+    <property name="texture" value="castle_gate.png"/>
+   </properties>
+  </object>
+  <object name="N" type="screenTransition" x="604" y="546" width="136" height="52"/>
+ </objectgroup>
+</map>

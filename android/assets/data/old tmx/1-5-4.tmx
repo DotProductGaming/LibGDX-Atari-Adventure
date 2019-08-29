@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="42" height="28" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32">
+  <image source="tileset.png" width="512" height="512"/>
+  <tile id="78">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Collision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztmFEOgzAMQ3tCzsINuPp+NglFSe041tjHLEVIkJRHk0DLtda6hoY0Hd9l3+RUdZp8Kv05NZ9KDOd5swkDGmMnlhPd5+n5jGwV64STyRfDyZ5DdYFysePtzudOav3GawonuofiF2OYnB1v63BOeqmKqY4fRU5HP3QY2Wfucjreo9E3y5eLk+ntTv/HGIaz821heTNjnyHjrPwUXrVes5iq3109wYwz/R4prIijWwMMZ5d1ss5AYtefrvyxivPdWSezHEpes/i71PW8+k5gLWqy73D1GaPp/shVj0iOfdwTnKodi6s757+GX+Z8AWiewbs=
+  </data>
+ </layer>
+ <layer name="NonCollision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJzNluuNwzAMg71ZN+gGXeHQBbxA/mbPjhDcFagBgUdKdJo+BAgNIoX+LFlGW3vebn++PHwNz8sj9i22Nc25TWr1Ir7sdPwWOVnOrL7iXBN/NyfWFxnZNyz2SU5Wc8XqcjINt1/IEXPP4X21l5l67ukX4xzxyImsUc/lrBiyfmWcuD6rS1XrEf9J+C8GB4ur9VmPMv6qlpFzuMvp1HSWs5qtS/vP6nKqs+fsh81u1fP7bwdO7GvF6s4t7im7b4ZhLVnvM85s7lQOxjIfjMga13A51VxVrEpL1bLBO4ezYlUs1Z2Hxvodmavz6bIyXqateBRf1HL37LCyczvyhl0NPrd/R7CqvKupX90NM6yZltqT+s/h5s1YL7RVXsbxbP328GZrMK7qrKsZmzW3b2g9uLLsLjiaF5lPsPZJPDv31hGsillx3j7Mia44tzdyRmNnr4tnV+9V9irtX4MsdeQ=
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="42" height="28">
+  <object name="S" type="screenTransition" x="512" y="898" width="322" height="86"/>
+  <object name="N" type="screenTransition" x="512" y="-95" width="322" height="86"/>
+  <object name="E" type="screenTransition" x="1345" y="280" width="120" height="292"/>
+  <object name="W" type="screenTransition" x="-123" y="269" width="120" height="292"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="42" height="28" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tileset" tilewidth="32" tileheight="32">
+  <image source="tileset.png" width="512" height="512"/>
+  <tile id="78">
+   <properties>
+    <property name="collision" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Collision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztlLERwCAMxLwo+69BRUuM/eYCSHcuKCJUxDQzax8z8J6z30WHTn/njNX7qj3Vfjq1/pc6lftd9W7s8tH5v84Zkf/dg9pLJ50KX8Yb2VPVqL103tcJAHmUe1t5xymdHXp2wIs=
+  </data>
+ </layer>
+ <layer name="NonCollision Tiles" width="42" height="28">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20Hb6AAAAAA4DcSYAAB
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1" width="42" height="28">
+  <object name="S" type="screenTransition" x="-25" y="903" width="1395" height="91"/>
+  <object name="N" type="screenTransition" x="-19" y="-92" width="1386" height="85"/>
+  <object name="E" type="screenTransition" x="1357" y="-16" width="125" height="925"/>
+  <object name="W" type="screenTransition" x="-135" y="-19" width="123" height="935">
+   <properties>
+    <property name="isPortal" value=""/>
+    <property name="portalX" value="4"/>
+    <property name="portalY" value="6"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
